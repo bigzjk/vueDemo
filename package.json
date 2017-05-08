@@ -4,7 +4,7 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot --open --port 5008"
+    "dev": "webpack-dev-server --inline --hot --open --port 5009"
   },
   "author": "",
   "license": "ISC",
@@ -30,6 +30,7 @@
   "dependencies": {
     "mint-ui": "^2.2.5",
     "vue": "^2.3.2",
+    "vue-resource": "^1.3.1",
     "vue-router": "^2.5.3"
   }
 }
