@@ -12,6 +12,7 @@
 </template>
 
 <script>
+import common from '../../kits/common.js'
   export default {
     data(){
       return {
@@ -24,7 +25,7 @@
     created(){
       this.id = this.$route.params.id;
       //console.log(this.id);
-      var url = "http://webhm.top:8899/api/getnew/"+this.id;
+      var url =common.apidomain+ "/api/getnew/"+this.id;
       this.$http.get(url).then(function(response){
         var res = response.body;
         console.log(res);

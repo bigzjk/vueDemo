@@ -53,6 +53,7 @@
 </template>
  <script>
   import { Toast } from 'mint-ui';
+  import common from '../kits/common.js'
   export default{
     data(){
       return {
@@ -64,7 +65,7 @@
       },
       methods:{
         getimgs() {
-          var url = "http://webhm.top:8899/api/getlunbo"; 
+          var url = common.apidomain+"/api/getlunbo"; 
           this.$http.get(url).then(function(response){
             var data = response.body;
             if(data.status !=0) {

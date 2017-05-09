@@ -18,6 +18,7 @@
   </div>
 </template>
  <script>
+    import common from '../../kits/common.js'
    export default{
       data() {
         return {
@@ -31,7 +32,7 @@
         // 获取api中的新闻资讯数据
         getnewsList() {
           //http://webhm.top:8899/api/getnewslist
-          var url = "http://webhm.top:8899/api/getnewslist";
+          var url = common.apidomain+"/api/getnewslist";
           this.$http.get(url).then(function (response) {
               var data = response.body;
               if(data.status !=0) {
